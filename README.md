@@ -9,12 +9,8 @@ The maze is represented as a 2d array of integers, with different environment ty
  
  # For Example:
  
-| begin | route | wall | wall | wall | wall |
-| wall, route, wall, wall, wall, wall |
-| wall, route, route, wall, wall, wall |
-| wall, wall, route, wall, wall, wall |
-| wall, wall, route, wall, wall, wall |
-| end, route, route, wall, wall, wall | 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+ 
 
 The route represent the correct route through the maze, walls can't be navigated through. You can follow the routes visually to find the correct path through the maze.
  
