@@ -9,7 +9,7 @@ The maze is represented as a 2d array of integers, with different environment ty
  
  # For Example:
  
-| begin, route, wall, wall, wall, wall |
+| begin | route | wall | wall | wall | wall |
 | wall, route, wall, wall, wall, wall |
 | wall, route, route, wall, wall, wall |
 | wall, wall, route, wall, wall, wall |
@@ -23,3 +23,6 @@ The route represent the correct route through the maze, walls can't be navigated
 ## Contributors
 - Anish Surti
 - Akash Jagtap
+
+## References
+- Genetic Algorithms in Java Basics by Jacobson, Lee, Kanber, Burak
