@@ -12,7 +12,7 @@ The maze is represented as a 2d array of integers, with different environment ty
 ![alt text](https://github.com/srtanish1992/INFO6205-312/blob/master/maze_matrix.JPG)
  
 
-The route represent the correct route through the maze, walls can't be navigated through. You can follow the routes visually to find the correct path through the maze.
+The **route** represent the correct route through the maze, **wall** can't be navigated through. You can follow the routes visually to find the correct path through the maze.
  
  Our aim is to find out a fitness score for a path; it is this score that the genetic algorithm will optimize.
 
