@@ -97,7 +97,8 @@ public class RoboNavigator {
         {
             currentPos.setX(newPos.getX());
             currentPos.setY(newPos.getY());
-        }else routePositions.add(new Position(currentPos));
+        }else
+            routePositions.add(new Position(currentPos));
     }
     
     private void chngeDir(int turnDir)
@@ -105,20 +106,32 @@ public class RoboNavigator {
         switch(dir)
         {
             case BACKWARD:
-                if (turnDir == turn_Clockwise) dir = Direction.LEFT;
-                else if (turnDir == turn_Counter_Clockwise) dir = Direction.RIGHT;
+                if (turnDir == turn_Clockwise)
+                    dir = Direction.LEFT;
+                else
+                    if (turnDir == turn_Counter_Clockwise)
+                        dir = Direction.RIGHT;
                 break;
             case FORWARD:
-                if (turnDir == turn_Clockwise) dir = Direction.RIGHT;
-                else if (turnDir == turn_Counter_Clockwise) dir = Direction.LEFT;
+                if (turnDir == turn_Clockwise)
+                    dir = Direction.RIGHT;
+                else
+                    if (turnDir == turn_Counter_Clockwise)
+                        dir = Direction.LEFT;
                 break;
             case LEFT:
-                if (turnDir == turn_Clockwise) dir = Direction.FORWARD;
-                else if (turnDir == turn_Counter_Clockwise) dir = Direction.BACKWARD;
+                if (turnDir == turn_Clockwise)
+                    dir = Direction.FORWARD;
+                else
+                    if (turnDir == turn_Counter_Clockwise)
+                        dir = Direction.BACKWARD;
                 break;
             case RIGHT:
-                if (turnDir == turn_Clockwise) dir = Direction.BACKWARD;
-                else if (turnDir == turn_Counter_Clockwise) dir = Direction.FORWARD;
+                if (turnDir == turn_Clockwise)
+                    dir = Direction.BACKWARD;
+                else
+                    if (turnDir == turn_Counter_Clockwise)
+                        dir = Direction.FORWARD;
                 break;     
         }
     }

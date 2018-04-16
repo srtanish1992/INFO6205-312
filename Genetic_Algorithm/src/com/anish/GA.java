@@ -34,7 +34,7 @@ public class GA {
         return crossoverPopulation;
     }
     
-    private GASolution crossoverSolution(GASolution sol1, GASolution sol2)
+    public GASolution crossoverSolution(GASolution sol1, GASolution sol2)
     {
         GASolution crossoverSOl = new GASolution();
         if(RobotDriver.crossRate > Math.random()) 
@@ -63,7 +63,7 @@ public class GA {
         return mutatePop;
     }
     
-    private GASolution mutateSolution(GASolution gaSolution)
+    public GASolution mutateSolution(GASolution gaSolution)
     {
         IntStream.range(0, gaSolution.getDigits().size()).forEach(x -> {
             if (RobotDriver.mutRate > Math.random()) {

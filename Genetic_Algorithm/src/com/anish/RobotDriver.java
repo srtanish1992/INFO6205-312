@@ -11,7 +11,7 @@ package com.anish;
  */
 public class RobotDriver {
     
-    public static final int maxNoOFGen = 250;
+    public static final int maxNoOFGen = 1000;
     public static final int popSize = 10;
     public static final double mutRate = 0.05;
     public static final double crossRate = 0.9;

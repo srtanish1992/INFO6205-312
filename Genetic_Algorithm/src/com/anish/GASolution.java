@@ -32,14 +32,21 @@ public class GASolution {
     public ArrayList<Integer> getDigits() {
         return digits;
     }
+
+    public void setDigits(ArrayList<Integer> a)
+    {
+        this.digits=a;
+    }
     
     public ArrayList<Integer> getActions(){
         int numberOfActions = digits.size()/2;
         ArrayList<Integer> actions = new ArrayList<Integer>(numberOfActions);
         IntStream.range(0, numberOfActions).forEach(x -> {
            Integer action = 0;
-           if (digits.get(x*2) == 1) action += 2;
-           if (digits.get((x*2)+1) == 1) action += 1;
+           if (digits.get(x*2) == 1)
+               action += 2;
+           if (digits.get((x*2)+1) == 1)
+               action += 1;
            actions.add(x, action);
         });
         return actions;
